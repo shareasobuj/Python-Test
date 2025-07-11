@@ -1,9 +1,5 @@
 # Python-Test
-from flask import Flask
-app = Flask(__name__)
 
-html_code = """
-<!DOCTYPE html>
 <html>
 <head>
     <title>My Python Website</title>
@@ -40,12 +36,6 @@ html_code = """
     </div>
 </body>
 </html>
-"""
 
-@app.route('/')
-def home():
-    return html_code
 
-if __name__ == '__main__':
-    app.run(debug=True)
     
